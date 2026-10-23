@@ -1,61 +1,107 @@
-.body {
-    display: flex;
-    flex-direction: column;
+/*  imports   */
+.gaegu-regular {
+  font-family: "Gaegu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-.main {
-    flex: 1;
+.roboto-uniquifier {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
 }
+
+/*  Main things   */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+
 /*     Header & Footer    */
 
 .topheader {
-    display: flex;
-    background-color: rgba(70, 44, 44, 0.578);
-    justify-content: center;
+  display: flex;
+  background-color: rgba(59, 32, 32, 0.578);
+  justify-content: center;
+  gap: 40px;
 
-    padding: 30px;
-    font-size: 20px;
+  padding: 30px;
+  font-size: 20px;
 }
 
 .Footer {
-    background-color: rgba(70, 44, 44, 0.578);
-    padding: 15px;
-    flex-direction: row;
-
-    text-align: center;
-    justify-content: space-between;
-    align-items: flex-end;
-
+  position: sticky;
+  display: flex;
+  background-color: rgba(70, 44, 44, 0.578);
+  padding: 15px;
+  flex-direction: row;
+  margin: 160px 0px;
+  text-align: center;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
-
-/*   Links   */
+/*   Links  / texts  */
 
 a {
-    color: rgb(105, 89, 89);
-    text-decoration: dotted;
+  color: rgb(60, 48, 48);
+  text-decoration: dotted;
 }
 
 a:hover {
-    color: rgb(56, 56, 56);
-    transform: 5.0s;
+  color: rgb(56, 56, 56);
+  transform: 5s;
 }
+
+h1{
+  font-size: 90px;
+  font-family: "Gaegu";
+}
+
+
+
+
 
 
 /*    Items    */
 
 .item {
-    display: flex;
-    gap: 0.5px;
-    align-items: baseline;
+  display: flex;
+  gap: 0.5px;
+  align-items: baseline;
 }
 
-.item-pris { 
-    font-size: 1rem;
+.item-pris {
+  font-size: 1rem;
+}
+
+/*     home / nein meny    */
+
+.home {
+  z-index: 0;
+}
+
+.home::before {
+  content: "";
+  position: fixed;
+  inset: -20px;            /* slightly bigger than the screen so the blurred edges don't show */
+  z-index: -1;             /* behind everything else */
+  background-image: url("img/Kantine.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(8px);       /* change this number for more or less blur */
 }
 
 
-/*     Header & Footer    */
+
 /*     Header & Footer    */
 /*     Header & Footer    */
 /*     Header & Footer    */

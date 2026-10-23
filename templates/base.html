@@ -5,17 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Base</title>
     <link rel="stylesheet" href="{{ url_for ('static', filename='style.css')}}">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gaegu&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    
+
 </head>
 
+<body class="{% block bodyclass %}{% endblock %}">
 <header class="topheader">
-    <body>
 
     <nav class="Navbar">
         <a href="/">Hjemmeside</a>
         <a href="/meny">Menyen vår</a>
         <a href="/varer">Varm mat</a>
         <a href="/kontakt">Kontakt Oss</a>
-
    </nav>
 </header>
 <!--
