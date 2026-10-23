@@ -9,4 +9,26 @@
         dette er en test
     </p>
 
+
+    {% for item in varer %}
+        <p>{{item}}</p>
+        {% for vare in varer[item] %}
+        <p class="item-navn"> {{ vare.navn }} </p>
+        <p class="iten-pris"> {{ vare.pris }} </p>
+        {%endfor%}
+
+    {% endfor %}
+    <p>hhhhhh</p>
     {% endblock %}
+
+    <!--
+    En liste over faste varer (bagetter, drikke, boller osv.)
+• Inkluder navn og pris
+• Ha med bilder
+
+ En liste over faste varer (bagetter, drikke, boller osv.)
+• Inkluder navn og pris
+• Ha med bilder
+    
+    
+    -->

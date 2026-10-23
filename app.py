@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+from data import MENY
 #Denne funksjonen tar et malenavn som argument og returnerer
 #innholdet (html) som skal sendes til klienten
 app = Flask(__name__)
@@ -15,7 +16,7 @@ def hovedmeny():
 
 @app.route('/varer')
 def varer():
-    return render_template('varer.html')
+    return render_template('varer.html', varer=MENY)
 
 @app.route('/kontakt')
 def kontakter():
