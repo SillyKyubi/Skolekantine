@@ -1,0 +1,63 @@
+.body {
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1;
+}
+/*     Header & Footer    */
+
+.topheader {
+    display: flex;
+    background-color: rgba(70, 44, 44, 0.578);
+    justify-content: center;
+
+    padding: 30px;
+    font-size: 20px;
+}
+
+.Footer {
+    background-color: rgba(70, 44, 44, 0.578);
+    padding: 15px;
+    flex-direction: row;
+
+    text-align: center;
+    justify-content: space-between;
+    align-items: flex-end;
+
+}
+
+
+/*   Links   */
+
+a {
+    color: rgb(105, 89, 89);
+    text-decoration: dotted;
+}
+
+a:hover {
+    color: rgb(56, 56, 56);
+    transform: 5.0s;
+}
+
+
+/*    Items    */
+
+.item {
+    display: flex;
+    gap: 0.5px;
+    align-items: baseline;
+}
+
+.item-pris { 
+    font-size: 1rem;
+}
+
+
+/*     Header & Footer    */
+/*     Header & Footer    */
+/*     Header & Footer    */
+/*     Header & Footer    */
+/*     Header & Footer    */
+/*     Header & Footer    */

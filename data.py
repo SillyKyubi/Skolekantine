@@ -1,4 +1,4 @@
-MENY = {
+VARER = {
     "Bakeverk": [
         {"navn": "Skolebolle", "pris": 15},
         {"navn": "Kanelbolle", "pris": 25},
@@ -26,6 +26,16 @@ MENY = {
         {"navn": "Kjeks", "pris": 15},
         {"navn": "Is", "pris": 67},
     ],
+}
+
+
+MENY = {
+    "Varmmat": [
+        {"navn": "Sjokolade", "pris": 20, "image": "Varmmat.jpg"},
+        {"navn": "Kjeks", "pris": 15},
+        {"navn": "Is", "pris": 67},
+    ]
+
 }
 
 ## dette er lagd av AI.

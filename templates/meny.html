@@ -2,8 +2,25 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h1>Menyen</h1>
-    <p>melk</p>
+    
+<div>
+    {% for item in varer %}
+        <p>{{item}}</p>
+
+        {% for vare in varer[item] %}
+         <div class="item">
+            <span class="item-navn"> {{ vare.navn }} </span>
+            <span class="iten-pris"> {{ vare.pris }} </span>
+        </div>
+
+        {%endfor%}
+
+    {% endfor %}
+</div>
+
+
+
+   
 
 
 {% endblock %}
@@ -17,5 +34,12 @@ Vis ukens meny (mandag–fredag)
 • Du kan bruke for-løkker for å vise menyen hvis du vil — for eksempel sende inn en
 liste med retter fra Flask
 
+
+<div class="vare">
+            <img src="{{ url_for('static', filename='bilder/' + vare.bilde) }}"
+                 alt="{{ vare.navn }}">
+            <p class="vare-navn">{{ vare.navn }}</p>
+            <p class="vare-pris">{{ vare.pris }} kr</p>
+        </div>
 
 -->
