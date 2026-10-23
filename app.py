@@ -3,8 +3,6 @@ from flask import Flask, render_template
 #innholdet (html) som skal sendes til klienten
 app = Flask(__name__)
 
-if __name__ == "__main__":
-    app.run()
 
 # routes??? idk..
 @app.route('/')
@@ -22,3 +20,7 @@ def varer():
 @app.route('/kontakt')
 def kontakter():
     return render_template('kontakt.html')
+
+
+if __name__ == "__main__":
+    app.run(debug=True, port=5005)
