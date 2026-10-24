@@ -5,70 +5,76 @@
   font-style: normal;
 }
 
-.roboto-uniquifier {
-  font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-}
-
 /*  Main things   */
 body {
   display: flex;
   flex-direction: column;
+  margin: 0px; /* her har def settings 8px eller no drit så nå kan header og footer være liks ved bunnen / kanten..*/
+  min-height: 100vh; /* Dette er er (ki som har gitt alternativ) basically minimum height på selve pagen*/
+
 }
 
 main {
   flex: 1;
+  padding: 20px;
+  max-width: 900px;
+  box-sizing: border-box;
 }
 
+text {
+  margin-left: 50px;
 
+}
 /*     Header & Footer    */
 
 .topheader {
+  position: sticky;
   display: flex;
-  background-color: rgba(59, 32, 32, 0.578);
+  top: 0;
+
+  z-index: 1;
+  background-color: rgba(32, 22, 22, 0.578);
   justify-content: center;
-  gap: 40px;
 
   padding: 30px;
   font-size: 20px;
+  align-items: center;
+
 }
+
+
 
 .Footer {
   position: sticky;
   display: flex;
-  background-color: rgba(70, 44, 44, 0.578);
-  padding: 15px;
+  background-color: rgba(32, 22, 22, 0.578);
+  padding: 3px;
   flex-direction: row;
-  margin: 160px 0px;
+
   text-align: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  padding-right: 20px;
+
   align-items: flex-end;
 }
 
 /*   Links  / texts  */
 
 a {
-  color: rgb(60, 48, 48);
+  color: rgb(35, 32, 32);
   text-decoration: dotted;
 }
 
 a:hover {
-  color: rgb(56, 56, 56);
+  color: rgb(107, 106, 106);
   transform: 5s;
 }
 
 h1{
   font-size: 90px;
   font-family: "Gaegu";
+  font;
 }
-
-
-
-
-
 
 /*    Items    */
 
@@ -88,16 +94,17 @@ h1{
   z-index: 0;
 }
 
+/*Dette her er KI som har lagd - noe som jeg har byttet litt om på rundt. (Lagd til , slettet.)*/
 .home::before {
   content: "";
   position: fixed;
-  inset: -20px;            /* slightly bigger than the screen so the blurred edges don't show */
-  z-index: -1;             /* behind everything else */
+  z-index: -1;           
   background-image: url("img/Kantine.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  filter: blur(8px);       /* change this number for more or less blur */
+  filter: blur(8px);
+  inset: -20px;
 }
 
 

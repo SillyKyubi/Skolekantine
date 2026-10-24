@@ -1,30 +1,30 @@
 <!-- Hovedside / hjemmeside -->
 {% extends "base.html" %}
 
-{% block title %} Kantina til Malin {% endblock%}
+{% block title %} Hjemmeside {% endblock%}
+
+{% block bodyclass %}home{% endblock %}
+
 
 
 {% block content %}
 
 <section class="Start">
     <h1>Skolekantina 67</h1>
-    <p>
-        Dette er en nettside som tilbyr elevene en fin oversiktlig meny som elevene kan bruke.
-    </p>
 
-    <a class="Knapp1" href="{{ url_for('hovedmeny')}}">Her er Menyen</a>
-    <p>Har du lyst på varm mat? Her er ukens meny:</p> <a href="{{ url_for('varer')}}">VarmMat</a>
 </section>
 
 <section class="Info">
-    <h2> Hvorfor har vi en nettside?</h2>
+<h2> Hvorfor har vi en nettside?</h2>
 
-    <p>Skole(navn) sin nettside er lagd sånn at varene er tydelig ute, sånn at du trenger ikke å komme innom for å skjekke priser.</p>
-    <p>Dette gjør det mer enklere for alle å jobbe effektivt med en fin kantine.</p>
+    <p> Dette er en nettside som Itilbyr elevene en fin oversiktlig meny som elevene kan bruke.</p>
+
+    <p> Vår sin nettside er lagd sånn at varene er tydelig ute, sånn at du trenger ikke å komme innom for å skjekke priser.</p>
+    <p> Husk at på torsdager er det 25% av på bakeværk :).</p>
 
 
-    <h3> Allergier </h3>
-    <p> Allergier som vegetar, glutenfri og melkefri er tydelig merket på hver vare og varm mat.</p>
+    <h3> Allergie & Hygene </h3>
+    <p> Allergier som vegetar, glutenfri og melkefri er tydelig merket på hver vare og varm mat. Vi har tatt vare på at alt sammen er ryddig og vasket, samt med at vi lager maten på en renslig måte der vi kan unngå bakteriespredning og matforgiftning</p>
 
 </section>
 
