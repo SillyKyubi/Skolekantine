@@ -4,28 +4,21 @@
 {% block content %}
     
 <div>
-    {% for item in varer %}
-        <p>{{item}}</p>
+    {% for mat in meny %}
+        <p>{{mat}}</p>
 
-        {% for vare in varer[item] %}
+        {% for mat in meny[mat] %}
          <div class="item">
-            <span class="item-navn"> {{ vare.navn }} </span>
-            <span class="iten-pris"> {{ vare.pris }} </span>
+            <span class="item-navn"> {{ mat.navn }} </span>
+            <span class="item-pris"> {{ mat.pris }} </span>
         </div>
-
+        <img class= "item-image" src=" {{ url_for('static', filename='img/' + mat.image) }}" alt=" Du mangler {{ mat.navn }} pls fiks NÅÅÅ ELLER SÅ BLIR DET DENG">
         {%endfor%}
 
     {% endfor %}
 </div>
 
-
-
-   
-
-
 {% endblock %}
-
-
 
 
 <!--

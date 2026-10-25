@@ -5,7 +5,6 @@ from data import MENY
 #innholdet (html) som skal sendes til klienten
 app = Flask(__name__)
 
-
 # routes??? idk..
 @app.route('/')
 def index():

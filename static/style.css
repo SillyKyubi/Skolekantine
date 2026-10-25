@@ -14,13 +14,19 @@ body {
 
 }
 
-main {
+.main {
   flex: 1;
   padding: 20px;
   max-width: 900px;
   box-sizing: border-box;
+  padding-top: 230px;
+
 }
 
+main h1 {
+  padding-top: 65px;
+
+}
 text {
   margin-left: 50px;
 
@@ -52,7 +58,7 @@ text {
   flex-direction: row;
 
   text-align: center;
-  justify-content: space-evenly;
+  justify-content: flex-end;
   padding-right: 20px;
 
   align-items: flex-end;
@@ -73,7 +79,21 @@ a:hover {
 h1{
   font-size: 90px;
   font-family: "Gaegu";
-  font;
+}
+
+span {
+  color: Black;
+
+}
+
+.start {
+  margin-bottom: 0px;
+  margin-top: 0px;
+
+}
+
+.start h1{
+  margin-bottom: 50px;
 }
 
 /*    Items    */
@@ -107,9 +127,29 @@ h1{
   inset: -20px;
 }
 
+/*     ITEMS & ITEM images   */
 
+.item-image {
+    max-width: 200px;
+    height: 200px;
+}
 
-/*     Header & Footer    */
+.Items {
+  display: flex;
+  grid-template-columns: 1fr 1fr;
+}
+
+.item-navn {
+  font-size: 20px;
+}
+
+.item-pris {
+  font-size: 13px;
+  padding-top: 6px;
+  padding-left: 2px;
+  color: gray;
+}
+
 /*     Header & Footer    */
 /*     Header & Footer    */
 /*     Header & Footer    */

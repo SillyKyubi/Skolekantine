@@ -10,9 +10,12 @@
     {% for item in varer %}
         <h2> {{item}} </h2>
         {% for vare in varer[item] %}
-        <p class="item-navn"> {{ vare.navn }} </p>
-        <p class="iten-pris"> {{ vare.pris }} </p>
 
+        <div class="Items">
+            <span class="item-navn"> {{ vare.navn }} </span>
+            <span class="item-pris"> {{ vare.pris }}kr</span>
+        </div>
+        <img class= "item-image" src=" {{ url_for('static', filename='img/' + vare.image) }}" alt=" Du mangler {{ vare.navn }} pls fiks NÅÅÅ ELLER SÅ BLIR DET DENG">
         
         {%endfor%}
 
