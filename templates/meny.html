@@ -2,24 +2,28 @@
 {% extends "base.html" %}
 
 {% block content %}
-    
-<div>
-    {% for mat in meny %}
-        <p>{{mat}}</p>
 
-        {% for mat in meny[mat] %}
-         <div class="item">
-            <span class="item-navn"> {{ mat.navn }} </span>
-            <span class="item-pris"> {{ mat.pris }} </span>
+<div class="meny">
+    {% for dag, retter in meny.items() %}
+    <section class="dag">
+        <h1>{{ dag }}</h1>
+        <h2>
+            {% for mat in retter %}{{ mat.navn }}<span class="item-pris">{{ mat.pris }},-</span>{% if not loop.last %} &amp; {% endif %}{% endfor %}
+        </h2>
+
+        <div class="boxes">
+            {% for mat in retter %}
+            <img class="item-image {{ 'mat1' if loop.first else 'mat2' }}"
+                 src="{{ url_for('static', filename='img/' + mat.image) }}"
+                 alt="Du mangler {{ mat.navn }} pls fiks NÅÅÅ ELLER SÅ BLIR DET DENG"
+                 title="{{ mat.navn }} - {{ mat.pris }},-">
+            {% endfor %}
         </div>
-        <img class= "item-image" src=" {{ url_for('static', filename='img/' + mat.image) }}" alt=" Du mangler {{ mat.navn }} pls fiks NÅÅÅ ELLER SÅ BLIR DET DENG">
-        {%endfor%}
-
+    </section>
     {% endfor %}
 </div>
 
 {% endblock %}
-
 
 <!--
 Vis ukens meny (mandag–fredag)

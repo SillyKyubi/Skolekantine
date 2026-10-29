@@ -35,18 +35,18 @@ MENY = {
     ],
     "Tirsdag": [
         {"navn": "Lasagna", "pris": 67, "image": "Lasagna.jpg"},
-        {"navn": "VegetariBolognese", "pris": 67, "image": "Veggybolly.jpg"},
+        {"navn": "Vegetariansk Bolognese", "pris": 67, "image": "Veggybolly.jpg"},
     ],
     "Onsdag": [
-        {"navn": "BeefChaoMein", "pris": 67, "image": "Beefchao.jpg"},
-        {"navn": "Chilly", "pris": 67, "image": "Chilly.jpg"},
+        {"navn": "Beef Chao Mein", "pris": 67, "image": "Beefchao.jpg"},
+        {"navn": "fylt paprika", "pris": 67, "image": "Chilly.jpg"},
     ],
     "Torsdag": [
-        {"navn": "FriedRice", "pris": 67, "image": "Friedrice.jpg"},
+        {"navn": "Fried rice", "pris": 67, "image": "Friedrice.jpg"},
         {"navn": "Bibimbap", "pris": 67, "image": "Bibimbap.jpg"},
     ],
     "Fredag": [
-        {"navn": "LoadedFries", "pris": 67, "image": "LoadedFry.jpg"},
-        {"navn": "VeggyBurger", "pris": 67, "image": "Veggyburger.jpg"},
+        {"navn": "Loaded Fries", "pris": 67, "image": "LoadedFry.jpg"},
+        {"navn": "Vegetariansk burger", "pris": 67, "image": "Veggyburger.jpg"},
     ],
 }

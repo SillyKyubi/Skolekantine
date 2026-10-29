@@ -1,29 +1,25 @@
-<!-- idk.. noe med varer -->
 {% extends "base.html" %}
 
-{% block title %} Velkommen til resturang c: {% endblock%}
+{% block title %}Varer{% endblock %}
 
+{% block content %}
 
-    {% block content %}
+    {% for kategori, produkter in varer.items() %}
+    <h2 class="kategori">{{ kategori }}</h2>
 
-
-    {% for item in varer %}
-        <h2> {{item}} </h2>
-        {% for vare in varer[item] %}
-
-        <div class="Items">
-            <span class="item-navn"> {{ vare.navn }} </span>
-            <span class="item-pris"> {{ vare.pris }}kr</span>
+    <div class="vare-box">
+        {% for vare in produkter %}
+        <div class="varer">
+            <div class="vare-info">
+                <span class="vare-navn">{{ vare.navn }}</span>
+                <span class="vare-pris">{{ vare.pris }}kr</span>
+            </div>
+            <img class="item-image"
+                 src="{{ url_for('static', filename='img/' + vare.image) }}"
+                 alt="Du mangler {{ vare.navn }} pls fiks NÅÅÅ ELLER SÅ BLIR DET DENG">
         </div>
-        <img class= "item-image" src=" {{ url_for('static', filename='img/' + vare.image) }}" alt=" Du mangler {{ vare.navn }} pls fiks NÅÅÅ ELLER SÅ BLIR DET DENG">
-        
-        {%endfor%}
-
+        {% endfor %}
+    </div>
     {% endfor %}
-    {% endblock %}
 
-    <!--
-    En liste over faste varer (bagetter, drikke, boller osv.)
-• Inkluder navn og pris
-• Ha med bilder    
-    -->
+{% endblock %}

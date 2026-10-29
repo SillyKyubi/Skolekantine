@@ -33,27 +33,31 @@ text {
 }
 /*     Header & Footer    */
 
-.topheader {
+.topheader nav {
   position: sticky;
   display: flex;
   top: 0;
 
   z-index: 1;
-  background-color: rgba(32, 22, 22, 0.578);
+  background-color: rgba(64, 28, 13, 0.899);
+
   justify-content: center;
+  align-items: center;
+  gap: 50px;
 
   padding: 30px;
   font-size: 20px;
-  align-items: center;
-
 }
 
 
+.navtext {
+  margin: 0;
+}
 
 .Footer {
-  position: sticky;
-  display: flex;
-  background-color: rgba(32, 22, 22, 0.578);
+  
+  margin-top: auto;
+  background-color: rgba(64, 28, 13, 0.899);
   padding: 3px;
   flex-direction: row;
 
@@ -67,7 +71,7 @@ text {
 /*   Links  / texts  */
 
 a {
-  color: rgb(35, 32, 32);
+  color: rgb(12, 12, 12);
   text-decoration: dotted;
 }
 
@@ -98,11 +102,6 @@ span {
 
 /*    Items    */
 
-.item {
-  display: flex;
-  gap: 0.5px;
-  align-items: baseline;
-}
 
 .item-pris {
   font-size: 1rem;
@@ -127,7 +126,7 @@ span {
   inset: -20px;
 }
 
-/*     ITEMS & ITEM images   */
+/*     ITEMS & VARER   */
 
 .item-image {
     max-width: 200px;
@@ -139,18 +138,127 @@ span {
   grid-template-columns: 1fr 1fr;
 }
 
-.item-navn {
+.item-navn, .vare-navn {
   font-size: 20px;
 }
 
-.item-pris {
+
+.item-pris, .vare-pris {
   font-size: 13px;
   padding-top: 6px;
   padding-left: 2px;
   color: gray;
 }
 
+/*     ---------- MENY PAGE ----------    */
+
+.meny {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    
+}
+
+.dag {
+    margin-bottom: 4rem;
+    border-bottom: 2px solid #a52020;
+    padding-bottom: 90px;
+}
+
+.dag h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 4.5rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.dag h2 {
+    margin: 0.5rem 0 1rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+.boxes {
+    
+    display: flex;
+    gap: 1.5rem;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.box {
+    border: 4px solid #000;
+    border-radius: 12px;
+    padding: 1rem;
+    min-height: 200px;
+}
+
+.box.mat1 { flex: 1.2; }
+.box.mat2 { flex: 1; }
+
+.item-image {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.75rem;
+    font-size: 1.25rem;
+}
+
+@media (max-width: 600px) {
+    .boxes { flex-direction: column; }
+    .dag h1 { font-size: 3rem; }
+}
+
+
+
 /*     Header & Footer    */
 /*     Header & Footer    */
 /*     Header & Footer    */
-/*     Header & Footer    */
+
+
+/*    ----------   VARER MENY   ---------- */
+.kategori {
+    margin: 2.5rem 0 1rem;
+    font-size: 2rem;
+    border-bottom: 2px solid #7f7272;
+    padding-bottom: 0.3rem;
+    padding-left: 10px;
+}
+
+/* The items under the heading */
+.vare-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-left: 10px;
+}
+
+/* One item */
+.varer {
+    width: 220px;
+    
+}
+
+.vare-info {
+    display: flex;
+    
+    align-items: baseline;
+    margin-bottom: 0.4rem;
+}
+
+
+.item-image {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 12px;
+}
