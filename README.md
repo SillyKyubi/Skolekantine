@@ -154,6 +154,8 @@ VARER = [
 }
 ```
 
+- Spørsmål angående css - og hvordan man fikser / gjør ting.
+
 ## SIKKERHETSPRINSIPPER
 1. `debug=True` brukes kun under utvikling og må slås av før siden publiseres.
 2. Siden har ingen skjema eller innlogging, så det er ingen passord eller persondata som kan lekke
