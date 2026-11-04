@@ -154,13 +154,10 @@ VARER = [
 }
 ```
 
-
-
-## BRUKERTESTING
-
-
 ## SIKKERHETSPRINSIPPER
-
+1. `debug=True` brukes kun under utvikling og må slås av før siden publiseres.
+2. Siden har ingen skjema eller innlogging, så det er ingen passord eller persondata som kan lekke
+3. Helt trygg :)
 
 ## Notater til skrivingen av readme.html
 
@@ -172,9 +169,3 @@ VARER = [
 - Litterturliste/kildeliste (for eksempel stack-overflow, chat gpt osv.)
 - Brukertesting (hvis brukertesting) og tilbakemeldinger.
 - Hvilke sikkerhetsprinsipper som er implementert
-
-`inline kode`
-
-```
-
-```
