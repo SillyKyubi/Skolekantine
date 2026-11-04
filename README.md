@@ -159,13 +159,4 @@ VARER = [
 2. Siden har ingen skjema eller innlogging, så det er ingen passord eller persondata som kan lekke
 3. Helt trygg :)
 
-## Notater til skrivingen av readme.html
-
-
-
-- Navn på prosjektet
-- Prosjektbeskrivelse. Må inneholde en oversikt over de viktigste funksjonene og hva brukerne kan gjøre på nettsiden. Må inneholde hvilke programmeringsspråk du har brukt i prosjektet.
-- Hvordan kjøre programmet. (Må noe lastes ned, må man skrive noe spesielle syntaxer?)
-- Litterturliste/kildeliste (for eksempel stack-overflow, chat gpt osv.)
-- Brukertesting (hvis brukertesting) og tilbakemeldinger.
-- Hvilke sikkerhetsprinsipper som er implementert
+#### Kos deg :)
