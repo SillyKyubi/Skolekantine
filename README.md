@@ -133,6 +133,29 @@ VARER = [
 }
 ```
 
+`Hey Claude, I need help bringing my .Start h1 down to match the other texts. (insert picture of the current layout) (Insert .Start h1, .Start & .home-content CSS.`
+```
+/* delete this: */
+.Start {
+  margin-bottom: auto;
+}
+
+.home-content {
+  z-index: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}                              /* your pasted rule was missing this closing brace */
+
+.Start h1 {
+  margin-bottom: 20px;         /* space between the title and "Kort informasjon" */
+  padding-top: 0;              /* removes the big gap above the title */
+}
+```
+
+
+
 ## BRUKERTESTING
 
 
@@ -141,9 +164,6 @@ VARER = [
 
 ## Notater til skrivingen av readme.html
 
-```
-bø
-```
 
 
 - Navn på prosjektet
